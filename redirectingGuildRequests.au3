@@ -48,30 +48,189 @@ ToolTip("wait for 3 sec",0,0)
 Sleep(3000)
 
 #comments-end
-
-	MouseMove(587, 684)
-	MouseWheel("down",3)
-
-While True
-	If isColor(672,678, 0x856645) Then
-		ToolTip("clk on hamberg bar",0,0)
-		clickOn(674, 682)
-		ToolTip("clk on personal info",0,0)
-		clickOn(693, 703)
-		ToolTip("wait til loaded",0,0)
-		waitTil(676, 979, 0x74492E, 40000)
-		ToolTip("clk on private msg",0,0)
-		clickOn(676, 979)
-		MouseClick("left", 246, 1096)
-		MouseClick("left", 246, 1096)
-		MouseClick("left", 246, 1096)
-		Send("{DEL}")
-		Send( $msg )
-		Send("{ENTER}")
-		clickOn(1140, 526)
-		clickOn(515, 789)
-	EndIf
+#comments-start
+For $i = 5 To 1 Step -1
+	ToolTip("clk on hamberg bar",0,0)
+	clickOn(674, 682)
+	ToolTip("clk on personal info",0,0)
+	clickOn(693, 703)
+	ToolTip("wait til loaded",0,0)
+	waitTil(676, 979, 0x74492E, 40000)
+	ToolTip("clk on private msg",0,0)
+	clickOn(676, 979)
+	MouseClick("left", 246, 1096)
+	MouseClick("left", 246, 1096)
+	MouseClick("left", 246, 1096)
+	Send("{DEL}")
+	Send( $msg )
+	Send("{ENTER}")
+	clickOn(1140, 526)
+	clickOn(515, 789)
 	sleep(100)
 	MouseMove(587, 684)
 	MouseWheel("down",3)
-WEnd
+Next
+
+$hambergBarX = 677
+$hambergBarY = 686
+$personalInfoX = 701
+$personalInfoY = 714
+
+For $i = 4 To 1 Step -1
+	ToolTip("clk on hamberg bar",0,0)
+	clickOn($hambergBarX, $hambergBarY)
+	ToolTip("clk on personal info",0,0)
+	clickOn($personalInfoX, $personalInfoY)
+	ToolTip("wait til loaded",0,0)
+	waitTil(676, 979, 0x74492E, 40000)
+	ToolTip("clk on private msg",0,0)
+	clickOn(676, 979)
+	MouseClick("left", 246, 1096)
+	MouseClick("left", 246, 1096)
+	MouseClick("left", 246, 1096)
+	Send("{DEL}")
+	Send( $msg )
+	Send("{ENTER}")
+	clickOn(1140, 526)
+	clickOn(515, 789)
+	sleep(100)
+	MouseMove(587, 684)
+	MouseWheel("down",3)
+Next
+
+$hambergBarX = 678
+$hambergBarY = 697
+$personalInfoX = 700
+$personalInfoY = 720
+
+For $i = 3 To 1 Step -1
+	ToolTip("clk on hamberg bar",0,0)
+	clickOn($hambergBarX, $hambergBarY)
+	ToolTip("clk on personal info",0,0)
+	clickOn($personalInfoX, $personalInfoY)
+	ToolTip("wait til loaded",0,0)
+	waitTil(676, 979, 0x74492E, 40000)
+	ToolTip("clk on private msg",0,0)
+	clickOn(676, 979)
+	MouseClick("left", 246, 1096)
+	MouseClick("left", 246, 1096)
+	MouseClick("left", 246, 1096)
+	Send("{DEL}")
+	Send( $msg )
+	Send("{ENTER}")
+	clickOn(1140, 526)
+	clickOn(515, 789)
+	sleep(100)
+	MouseMove(587, 684)
+	MouseWheel("down",3)
+Next
+
+
+
+$hambergBarX = 678
+$hambergBarY = 697
+$personalInfoX = 705
+$personalInfoY = 732
+
+For $i = 1 To 1 Step -1
+	ToolTip("clk on hamberg bar",0,0)
+	clickOn($hambergBarX, $hambergBarY)
+	ToolTip("clk on personal info",0,0)
+	clickOn($personalInfoX, $personalInfoY)
+	ToolTip("wait til loaded",0,0)
+	waitTil(676, 979, 0x74492E, 40000)
+	ToolTip("clk on private msg",0,0)
+	clickOn(676, 979)
+	MouseClick("left", 246, 1096)
+	MouseClick("left", 246, 1096)
+	MouseClick("left", 246, 1096)
+	Send("{DEL}")
+	Send( $msg )
+	Send("{ENTER}")
+	clickOn(1140, 526)
+	clickOn(515, 789)
+	sleep(100)
+	MouseMove(587, 684)
+	MouseWheel("down",3)
+Next
+
+$hambergBarX = 682
+$hambergBarY = 710
+$personalInfoX = 703
+$personalInfoY = 733
+
+For $i = 5 To 1 Step -1
+	ToolTip("clk on hamberg bar",0,0)
+	clickOn($hambergBarX, $hambergBarY)
+	ToolTip("clk on personal info",0,0)
+	clickOn($personalInfoX, $personalInfoY)
+	ToolTip("wait til loaded",0,0)
+	waitTil(676, 979, 0x74492E, 40000)
+	ToolTip("clk on private msg",0,0)
+	clickOn(676, 979)
+	MouseClick("left", 246, 1096)
+	MouseClick("left", 246, 1096)
+	MouseClick("left", 246, 1096)
+	Send("{DEL}")
+	Send( $msg )
+	Send("{ENTER}")
+	clickOn(1140, 526)
+	clickOn(515, 789)
+	sleep(100)
+	MouseMove(587, 684)
+	MouseWheel("down",3)
+Next
+
+$hambergBarX = 680
+$hambergBarY = 720
+$personalInfoX = 701
+$personalInfoY = 744
+
+For $i = 5 To 1 Step -1
+	ToolTip("clk on hamberg bar",0,0)
+	clickOn($hambergBarX, $hambergBarY)
+	ToolTip("clk on personal info",0,0)
+	clickOn($personalInfoX, $personalInfoY)
+	ToolTip("wait til loaded",0,0)
+	waitTil(676, 979, 0x74492E, 40000)
+	ToolTip("clk on private msg",0,0)
+	clickOn(676, 979)
+	MouseClick("left", 246, 1096)
+	MouseClick("left", 246, 1096)
+	MouseClick("left", 246, 1096)
+	Send("{DEL}")
+	Send( $msg )
+	Send("{ENTER}")
+	clickOn(1140, 526)
+	clickOn(515, 789)
+	sleep(100)
+	MouseMove(587, 684)
+	MouseWheel("down",3)
+Next
+#comments-end
+$hambergBarX = 682
+$hambergBarY = 698
+$personalInfoX = 700
+$personalInfoY = 720
+
+For $i = 5 To 1 Step -1
+	ToolTip("clk on hamberg bar",0,0)
+	clickOn($hambergBarX, $hambergBarY)
+	ToolTip("clk on personal info",0,0)
+	clickOn($personalInfoX, $personalInfoY)
+	ToolTip("wait til loaded",0,0)
+	waitTil(676, 979, 0x74492E, 40000)
+	ToolTip("clk on private msg",0,0)
+	clickOn(676, 979)
+	MouseClick("left", 246, 1096)
+	MouseClick("left", 246, 1096)
+	MouseClick("left", 246, 1096)
+	Send("{DEL}")
+	Send( $msg )
+	Send("{ENTER}")
+	clickOn(1140, 526)
+	clickOn(515, 789)
+	sleep(100)
+	MouseMove(587, 684)
+	MouseWheel("down",3)
+Next
