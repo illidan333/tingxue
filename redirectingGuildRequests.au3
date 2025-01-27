@@ -49,13 +49,21 @@ Sleep(3000)
 
 #comments-end
 ;#comments-start
+if isColor(911, 856, 0x93836C) Then
+	Exit
+EndIf
+
 For $i = 5 To 1 Step -1
+	if isColor(911, 856, 0x93836C) Then
+		Exit
+	EndIf
 	ToolTip("clk on hamberg bar",0,0)
 	clickOn(674, 682)
 	ToolTip("clk on personal info",0,0)
 	clickOn(693, 703)
 	ToolTip("wait til loaded",0,0)
 	waitTil(676, 979, 0x74492E, 40000)
+	Sleep(1000)
 	ToolTip("clk on private msg",0,0)
 	clickOn(676, 979)
 	MouseClick("left", 246, 1096)
@@ -77,12 +85,16 @@ $personalInfoX = 701
 $personalInfoY = 714
 
 For $i = 3 To 1 Step -1
+	if isColor(911, 856, 0x93836C) Then
+		Exit
+	EndIf
 	ToolTip("clk on hamberg bar",0,0)
 	clickOn($hambergBarX, $hambergBarY)
 	ToolTip("clk on personal info",0,0)
 	clickOn($personalInfoX, $personalInfoY)
 	ToolTip("wait til loaded",0,0)
 	waitTil(676, 979, 0x74492E, 40000)
+	Sleep(1000)
 	ToolTip("clk on private msg",0,0)
 	clickOn(676, 979)
 	MouseClick("left", 246, 1096)
@@ -104,12 +116,16 @@ $personalInfoX = 700
 $personalInfoY = 720
 
 For $i = 3 To 1 Step -1
+	if isColor(911, 856, 0x93836C) Then
+		Exit
+	EndIf
 	ToolTip("clk on hamberg bar",0,0)
 	clickOn($hambergBarX, $hambergBarY)
 	ToolTip("clk on personal info",0,0)
 	clickOn($personalInfoX, $personalInfoY)
 	ToolTip("wait til loaded",0,0)
 	waitTil(676, 979, 0x74492E, 40000)
+	Sleep(1000)
 	ToolTip("clk on private msg",0,0)
 	clickOn(676, 979)
 	MouseClick("left", 246, 1096)
@@ -133,12 +149,16 @@ $personalInfoX = 705
 $personalInfoY = 732
 
 For $i = 1 To 1 Step -1
+	if isColor(911, 856, 0x93836C) Then
+		Exit
+	EndIf
 	ToolTip("clk on hamberg bar",0,0)
 	clickOn($hambergBarX, $hambergBarY)
 	ToolTip("clk on personal info",0,0)
 	clickOn($personalInfoX, $personalInfoY)
 	ToolTip("wait til loaded",0,0)
 	waitTil(676, 979, 0x74492E, 40000)
+	Sleep(1000)
 	ToolTip("clk on private msg",0,0)
 	clickOn(676, 979)
 	MouseClick("left", 246, 1096)
@@ -160,12 +180,16 @@ $personalInfoX = 703
 $personalInfoY = 733
 
 For $i = 5 To 1 Step -1
+	if isColor(911, 856, 0x93836C) Then
+		Exit
+	EndIf
 	ToolTip("clk on hamberg bar",0,0)
 	clickOn($hambergBarX, $hambergBarY)
 	ToolTip("clk on personal info",0,0)
 	clickOn($personalInfoX, $personalInfoY)
 	ToolTip("wait til loaded",0,0)
 	waitTil(676, 979, 0x74492E, 40000)
+	Sleep(1000)
 	ToolTip("clk on private msg",0,0)
 	clickOn(676, 979)
 	MouseClick("left", 246, 1096)
@@ -187,12 +211,16 @@ $personalInfoX = 701
 $personalInfoY = 744
 
 For $i = 4 To 1 Step -1
+	if isColor(911, 856, 0x93836C) Then
+		Exit
+	EndIf
 	ToolTip("clk on hamberg bar",0,0)
 	clickOn($hambergBarX, $hambergBarY)
 	ToolTip("clk on personal info",0,0)
 	clickOn($personalInfoX, $personalInfoY)
 	ToolTip("wait til loaded",0,0)
 	waitTil(676, 979, 0x74492E, 40000)
+	Sleep(1000)
 	ToolTip("clk on private msg",0,0)
 	clickOn(676, 979)
 	MouseClick("left", 246, 1096)
@@ -214,12 +242,16 @@ $personalInfoX = 701
 $personalInfoY = 687
 
 For $i = 4 To 1 Step -1
+	if isColor(911, 856, 0x93836C) Then
+		Exit
+	EndIf
 	ToolTip("clk on hamberg bar",0,0)
 	clickOn($hambergBarX, $hambergBarY)
 	ToolTip("clk on personal info",0,0)
 	clickOn($personalInfoX, $personalInfoY)
 	ToolTip("wait til loaded",0,0)
 	waitTil(676, 979, 0x74492E, 40000)
+	Sleep(1000)
 	ToolTip("clk on private msg",0,0)
 	clickOn(676, 979)
 	MouseClick("left", 246, 1096)
@@ -241,12 +273,16 @@ $personalInfoX = 698
 $personalInfoY = 695
 
 For $i = 4 To 1 Step -1
+	if isColor(911, 856, 0x93836C) Then
+		Exit
+	EndIf
 	ToolTip("clk on hamberg bar",0,0)
 	clickOn($hambergBarX, $hambergBarY)
 	ToolTip("clk on personal info",0,0)
 	clickOn($personalInfoX, $personalInfoY)
 	ToolTip("wait til loaded",0,0)
 	waitTil(676, 979, 0x74492E, 40000)
+	Sleep(1000)
 	ToolTip("clk on private msg",0,0)
 	clickOn(676, 979)
 	MouseClick("left", 246, 1096)
@@ -269,12 +305,16 @@ $personalInfoX = $hambergBarX + 16
 $personalInfoY = $hambergBarY + 21
 
 For $i = 4 To 1 Step -1
+	if isColor(911, 856, 0x93836C) Then
+		Exit
+	EndIf
 	ToolTip("clk on hamberg bar",0,0)
 	clickOn($hambergBarX, $hambergBarY)
 	ToolTip("clk on personal info",0,0)
 	clickOn($personalInfoX, $personalInfoY)
 	ToolTip("wait til loaded",0,0)
 	waitTil(676, 979, 0x74492E, 40000)
+	Sleep(1000)
 	ToolTip("clk on private msg",0,0)
 	clickOn(676, 979)
 	MouseClick("left", 246, 1096)
@@ -299,12 +339,16 @@ $personalInfoX = $hambergBarX + 16
 $personalInfoY = $hambergBarY + 21
 
 For $i = 4 To 1 Step -1
+	if isColor(911, 856, 0x93836C) Then
+		Exit
+	EndIf
 	ToolTip("clk on hamberg bar",0,0)
 	clickOn($hambergBarX, $hambergBarY)
 	ToolTip("clk on personal info",0,0)
 	clickOn($personalInfoX, $personalInfoY)
 	ToolTip("wait til loaded",0,0)
 	waitTil(676, 979, 0x74492E, 40000)
+	Sleep(1000)
 	ToolTip("clk on private msg",0,0)
 	clickOn(676, 979)
 	MouseClick("left", 246, 1096)
@@ -319,3 +363,7 @@ For $i = 4 To 1 Step -1
 	MouseMove(587, 684)
 	MouseWheel("down",3)
 Next
+
+if isColor(911, 856, 0x93836C) Then
+	Exit
+EndIf
