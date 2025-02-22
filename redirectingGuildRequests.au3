@@ -12,8 +12,8 @@ to-do: determine vip lvl
 
 #include <sgslib.au3>
 
-$msg = "感谢申请我们夜阑听雪 请先去分会夜阑听海进行审核"
-$msgToInviteToQ = "欢迎来到夜阑听雪 请移步q裙进行下一步审核 裙号在公告里"
+$msg = "[emo:24][emo:49]感谢申请我会请先进q裙153·425097"
+$msgToInviteToQ = "[emo:24][emo:49]欢迎加入我会请先移步纳新q裙审核153·425097"
 
 Func inviteToGuild()
 	clickOn(99, 845)
@@ -36,6 +36,10 @@ EndFunc
 Func sendRecruitMessage($count, $hambergBarX, $hambergBarY)
 	$personalInfoX = $hambergBarX + 16
 	$personalInfoY = $hambergBarY + 21
+
+	If isColor(28, 822, 0xDD317F, 15) Then
+		inviteToGuild()
+	EndIf
 
 	For $i = $count To 1 Step -1
 		ToolTip("counting " + $i,0,0)
@@ -62,7 +66,8 @@ Func sendRecruitMessage($count, $hambergBarX, $hambergBarY)
 		Send("{ENTER}")
 		ToolTip("clk on private msg 4",0,0)
 
-		If isColor(28, 820, 0xDD3180, 10) Then
+		Sleep(1000)
+		If isColor(28, 822, 0xDD317F, 15) Then
 			inviteToGuild()
 		EndIf
 		
@@ -70,6 +75,11 @@ Func sendRecruitMessage($count, $hambergBarX, $hambergBarY)
 		sleep(100)
 		MouseMove(587, 684)
 		MouseWheel("down",3)
+		
+		if isColor(911, 856, 0x93836C) Then
+			return
+		EndIf
+
 	Next
 EndFunc
 
@@ -86,6 +96,9 @@ sendRecruitMessage(4, 682, 683)
 sendRecruitMessage(4, 680, 698)
 sendRecruitMessage(3, 681, 706)
 
-if isColor(911, 856, 0x93836C) Then
+If isColor(911, 856, 0x93836C) Then
+	sendRecruitMessage(1, 682, 702)
+	sendRecruitMessage(1, 682, 763)
+	sendRecruitMessage(1, 679, 829)
 	Exit
 EndIf
