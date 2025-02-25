@@ -12,8 +12,11 @@ to-do: determine vip lvl
 
 #include <sgslib.au3>
 
-$msg = "[emo:24][emo:49]感谢申请我会请先进q裙153·425097"
-$msgToInviteToQ = "[emo:24][emo:49]欢迎加入我会请先移步纳新q裙审核153·425097"
+$msg1 = "感谢申请我会 请进先听海 分流q裙1·53425097"
+$msg2 = "感谢申请我会 请进先听海 分流q裙15·3425097"
+$msg3 = "感谢申请我会 请进先听海 分流q裙153·425097"
+
+$msg = $msg3
 
 Func inviteToGuild()
 	clickOn(99, 845)
@@ -33,19 +36,19 @@ Func inviteToGuild()
 	ToolTip("clear msg",0,0)
 EndFunc
 
-Func sendRecruitMessage($count, $hambergBarX, $hambergBarY)
-	$personalInfoX = $hambergBarX + 16
-	$personalInfoY = $hambergBarY + 21
+Global $totalCount = 0
 
-	If isColor(28, 822, 0xDD317F, 15) Then
-		inviteToGuild()
-	EndIf
+Func sendRecruitMessage($count, $hambergBarX, $hambergBarY, $wrapUp = False)
+	$personalInfoX = $hambergBarX + 16
+	$personalInfoY = $hambergBarY + 21	
 
 	For $i = $count To 1 Step -1
-		ToolTip("counting " + $i,0,0)
-		if isColor(911, 856, 0x93836C) Then
-			Exit
+		If Not $wrapUp And isColor(911, 856, 0x93836C) Then
+			return
 		EndIf
+
+		$totalCount = $totalCount + 1
+
 		ToolTip("clk on hamberg bar",0,0)
 		clickOn($hambergBarX, $hambergBarY)
 		ToolTip("clk on personal info",0,0)
@@ -75,14 +78,11 @@ Func sendRecruitMessage($count, $hambergBarX, $hambergBarY)
 		sleep(100)
 		MouseMove(587, 684)
 		MouseWheel("down",3)
-		
-		if isColor(911, 856, 0x93836C) Then
-			return
-		EndIf
 
 	Next
 EndFunc
 
+sendRecruitMessage(5, 674, 682)
 sendRecruitMessage(5, 674, 682)
 sendRecruitMessage(1, 677, 686)
 sendRecruitMessage(3, 678, 697)
@@ -95,10 +95,13 @@ sendRecruitMessage(4, 682, 683)
 sendRecruitMessage(4, 682, 683)
 sendRecruitMessage(4, 680, 698)
 sendRecruitMessage(3, 681, 706)
+#ce
+
+;Exit
 
 If isColor(911, 856, 0x93836C) Then
-	sendRecruitMessage(1, 682, 702)
-	sendRecruitMessage(1, 682, 763)
-	sendRecruitMessage(1, 679, 829)
+	sendRecruitMessage(1, 683, 699, True)
+	sendRecruitMessage(1, 682, 761, True)
+	sendRecruitMessage(1, 683, 827, True)
 	Exit
 EndIf
