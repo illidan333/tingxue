@@ -82,7 +82,7 @@ Func sendRecruitMessage($count, $hambergBarX, $hambergBarY, $wrapUp = False)
 	Next
 EndFunc
 
-sendRecruitMessage(5, 674, 682)
+;#cs
 sendRecruitMessage(5, 674, 682)
 sendRecruitMessage(1, 677, 686)
 sendRecruitMessage(3, 678, 697)
@@ -92,12 +92,12 @@ sendRecruitMessage(4, 680, 720)
 sendRecruitMessage(4, 682, 665)
 sendRecruitMessage(4, 682, 674)
 sendRecruitMessage(4, 682, 683)
-sendRecruitMessage(4, 682, 683)
+sendRecruitMessage(1, 682, 683)
 sendRecruitMessage(4, 680, 698)
 sendRecruitMessage(3, 681, 706)
+sendRecruitMessage(5, 681, 710)
 #ce
-
-;Exit
+sendRecruitMessage(5, 681, 710);at least 4
 
 If isColor(911, 856, 0x93836C) Then
 	sendRecruitMessage(1, 683, 699, True)
