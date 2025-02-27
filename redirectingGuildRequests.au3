@@ -32,6 +32,7 @@ Func inviteToGuild()
 	ToolTip("bar",0,0)
 	clickOn(2332, 766)
 	ToolTip("invite",0,0)
+	debugScreenshot()
 	clickOn(490, 788)
 	ToolTip("clear msg",0,0)
 EndFunc

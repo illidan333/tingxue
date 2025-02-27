@@ -7,6 +7,8 @@ Func isColor($positionX, $positionY, $color, $variation = 5)
    return False
 EndFunc
 #include <pauseScript.au3>
+#include <ScreenCapture.au3>
+#include <Date.au3>
 ;#include <clickWithAxis.au3>
 Func tryToClick($x, $y, $color)
    If isColor($x, $y, $color) Then
@@ -51,4 +53,11 @@ Func waitTil($x, $y, $color, $timeout = 99999, $variation = 10)
 	  EndIf
    WEnd
    return False
+EndFunc
+
+Func debugScreenshot()
+   $date = _DateTimeFormat(_NowCalc(), 1)
+   $time = _DateTimeFormat(_NowCalc(), 3)
+   $time = StringReplace($time, ":", "-");windows file name cannot contain the ":" character
+   _ScreenCapture_Capture("C:\Users\hippo\OneDrive\Desktop\guildInvite "&$time&" "&$date&".jpg")
 EndFunc
