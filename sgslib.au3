@@ -55,9 +55,9 @@ Func waitTil($x, $y, $color, $timeout = 99999, $variation = 10)
    return False
 EndFunc
 
-Func debugScreenshot()
+Func screenshot($path)
    $date = _DateTimeFormat(_NowCalc(), 1)
    $time = _DateTimeFormat(_NowCalc(), 3)
    $time = StringReplace($time, ":", "-");windows file name cannot contain the ":" character
-   _ScreenCapture_Capture("C:\Users\hippo\OneDrive\Desktop\guildInvite "&$time&" "&$date&".jpg")
+   _ScreenCapture_Capture($path&"guildInvite "&$time&" "&$date&".jpg")
 EndFunc

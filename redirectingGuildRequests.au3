@@ -13,26 +13,29 @@ to-do: determine vip lvl
 #include <sgslib.au3>
 
 $msg1 = "感谢申请我会 请进先听海 分流q裙1·53425097"
-$msg2 = "感谢申请我会 请进先听海 分流q裙15·3425097"
-$msg3 = "感谢申请我会 请进先听海 分流q裙153·425097"
+$msg2 = "感谢申请我会 请进先听梦 分流q裙15·3425097"
 
-$msg = $msg3
+$msg = $msg2
 
 Func inviteToGuild()
 	clickOn(99, 845)
 	ToolTip("clk on name",0,0)
 	clickOn(141, 902)
 	ToolTip("cpy name",0,0)
-	clickOn(1487, 536)
+	clickOn(1487, 536);with bookmark
+	;clickOn(1481, 520);without bookmark
 	ToolTip("rightWindow friend search",0,0)
 	Send("{CTRLDOWN}v{CTRLUP}")
-	clickOn(1695, 536)
+	clickOn(1695, 536);with bookmark
+	;clickOn(1693, 522);without bookmark
 	ToolTip("search",0,0)
-	clickOn(2296, 615)
+	clickOn(2296, 615);with bookmark
+	;clickOn(2296, 599);without bookmark
 	ToolTip("bar",0,0)
-	clickOn(2332, 766)
+	clickOn(2332, 766);with bookmark
+	;clickOn(2327, 756);without bookmark
 	ToolTip("invite",0,0)
-	debugScreenshot()
+	screenshot("C:\Users\hippo\OneDrive\Desktop\sgs\")
 	clickOn(490, 788)
 	ToolTip("clear msg",0,0)
 EndFunc
