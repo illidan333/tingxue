@@ -44,7 +44,7 @@ Func clk($x,$y,$msg="",$clr=0)
    ToolTip("",0,0)
 EndFunc
 ;#include <wait.au3>
-Func waitTil($x, $y, $color, $timeout = 99999, $variation = 10)
+Func waitTil($x, $y, $color, $timeout = 999999, $variation = 10)
    $init = TimerInit()
    While True
 	  If TimerDiff($init) > $timeout Then ExitLoop

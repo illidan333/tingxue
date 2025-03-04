@@ -12,8 +12,9 @@ to-do: determine vip lvl
 
 #include <sgslib.au3>
 
-$msg1 = "感谢申请我会 请进先听海 分流q裙1·53425097"
-$msg2 = "感谢申请我会 请进先听梦 分流q裙15·3425097"
+$msg1 = "感谢申请我会 请先进听海 分流q裙1·53425097"
+$msg2 = "感谢申请我会 请先进听梦 分流q裙15·3425097"
+$msg2 = "感谢申请我会 请先进听梦 分流q裙一5三4二5零9七"
 
 $msg = $msg2
 
@@ -58,7 +59,7 @@ Func sendRecruitMessage($count, $hambergBarX, $hambergBarY, $wrapUp = False)
 		ToolTip("clk on personal info",0,0)
 		clickOn($personalInfoX, $personalInfoY)
 		ToolTip("wait til loaded",0,0)
-		waitTil(676, 979, 0x74492E, 40000)
+		waitTil(676, 979, 0x74492E)
 		Sleep(1000)
 		ToolTip("clk on private msg",0,0)
 		clickOn(676, 979)
@@ -82,6 +83,7 @@ Func sendRecruitMessage($count, $hambergBarX, $hambergBarY, $wrapUp = False)
 		sleep(100)
 		MouseMove(587, 684)
 		MouseWheel("down",3)
+		sleep(500)
 
 	Next
 EndFunc
