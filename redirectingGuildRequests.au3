@@ -12,6 +12,16 @@ to-do: determine vip lvl
 
 #include <sgslib.au3>
 
+;change to english
+clickOn(490, 788)
+$windowTitle = "三国杀官方正版_三国杀一将成名全新起航_星火燎原重燃三国！"
+Local $WM_INPUTLANGCHANGEREQUEST = 0x50
+Local $ret = DllCall("user32.dll", "long", "LoadKeyboardLayout", "str", "00000409", "int", 0)
+DllCall("user32.dll", "ptr", "SendMessage", "hwnd", WinGetHandle($windowTitle), _
+"int", $WM_INPUTLANGCHANGEREQUEST, _
+"int", 1, _
+"int", $ret[0])
+
 $msg1 = "感谢申请我会 请先进听海 分流q裙1·53425097"
 $msg2 = "感谢申请我会 请先进听梦 分流q裙15·3425097"
 $msg2 = "感谢申请我会 请先进听梦 分流q裙一5三4二5零9七"
