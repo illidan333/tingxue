@@ -22,11 +22,7 @@ DllCall("user32.dll", "ptr", "SendMessage", "hwnd", WinGetHandle($windowTitle), 
 "int", 1, _
 "int", $ret[0])
 
-$msg1 = "感谢申请我会 请先进听海 分流q裙1·53425097"
-$msg2 = "感谢申请我会 请先进听梦 分流q裙15·3425097"
-$msg2 = "感谢申请我会 请先进听梦 分流q裙一5三4二5零9七"
-
-$msg = $msg2
+$msg = "感谢申请 请先进夜阑听梦审核 加分流q裙15·3425097"
 
 Func inviteToGuild()
 	clickOn(99, 845)
@@ -70,7 +66,7 @@ Func sendRecruitMessage($count, $hambergBarX, $hambergBarY, $wrapUp = False)
 		clickOn($personalInfoX, $personalInfoY)
 		clickOn(490, 788)
 		ToolTip("clear msg",0,0)
-		ToolTip("wait til loaded",0,0)
+		ToolTip("wait til loaded " & $totalCount,0,0)
 		waitTil(676, 979, 0x74492E)
 		Sleep(1000)
 		ToolTip("clk on private msg",0,0)
@@ -101,19 +97,19 @@ Func sendRecruitMessage($count, $hambergBarX, $hambergBarY, $wrapUp = False)
 EndFunc
 
 ;#cs
-sendRecruitMessage(5, 674, 682)
-sendRecruitMessage(1, 677, 686)
-sendRecruitMessage(3, 678, 697)
-sendRecruitMessage(1, 678, 697)
-sendRecruitMessage(5, 682, 710)
-sendRecruitMessage(4, 680, 720)
-sendRecruitMessage(4, 682, 665)
-sendRecruitMessage(4, 682, 674)
-sendRecruitMessage(4, 682, 683)
-sendRecruitMessage(1, 682, 683)
-sendRecruitMessage(4, 680, 698)
-sendRecruitMessage(3, 681, 706)
-sendRecruitMessage(5, 681, 710)
+sendRecruitMessage(5, 674, 682);5
+sendRecruitMessage(1, 677, 686);6
+sendRecruitMessage(3, 678, 697);9
+sendRecruitMessage(1, 678, 697);10
+sendRecruitMessage(5, 682, 710);15
+sendRecruitMessage(4, 680, 720);19
+sendRecruitMessage(4, 682, 665);23
+sendRecruitMessage(4, 682, 674);27
+sendRecruitMessage(4, 682, 683);31
+sendRecruitMessage(1, 682, 683);32
+sendRecruitMessage(4, 680, 698);36
+sendRecruitMessage(3, 681, 706);39
+sendRecruitMessage(5, 681, 710);44
 #ce
 sendRecruitMessage(5, 681, 710);at least 4
 
