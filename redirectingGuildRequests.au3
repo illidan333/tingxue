@@ -24,7 +24,7 @@ DllCall("user32.dll", "ptr", "SendMessage", "hwnd", WinGetHandle($windowTitle), 
 "int", $ret[0])
 
 $msg = "感谢申请 请先进夜阑听梦审核 加分流q裙15·3425097"
-;$msg = "感谢申请 请先进夜阑听海审核 加分流q裙15·3425097"
+$msg = "感谢申请 请先进夜阑听海审核 加分流q裙15·3425097"
 
 Func inviteToGuild()
 	clickOn(99, 845)

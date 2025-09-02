@@ -29,9 +29,9 @@ Func tryToClick($x, $y, $color)
 EndFunc
 
 ;this function clicks on a pixel and the wait for 1 sec
-Func clickOn($x, $y)
+Func clickOn($x, $y, $s=1000)
    MouseClick("left", $x, $y)
-   Sleep ( 1000 );wait 1 sec to load the UI
+   Sleep ( $s );wait 1 sec to load the UI by default
 EndFunc
 
 Func clk($x,$y,$msg="",$clr=0)
