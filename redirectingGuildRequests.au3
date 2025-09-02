@@ -97,12 +97,13 @@ Func sendRecruitMessage($count, $hambergBarX, $hambergBarY, $wrapUp = False)
 EndFunc
 
 ;#cs
-sendRecruitMessage(5, 674, 682);5
-sendRecruitMessage(1, 677, 686);6
-sendRecruitMessage(3, 678, 697);9
-sendRecruitMessage(1, 678, 697);10
-sendRecruitMessage(5, 682, 710);15
-sendRecruitMessage(4, 680, 720);19
+;sendRecruitMessage(5, 674, 682);5
+;sendRecruitMessage(1, 677, 686);6
+;sendRecruitMessage(3, 678, 697);9
+;sendRecruitMessage(1, 678, 697);10
+;sendRecruitMessage(5, 682, 710);15
+;sendRecruitMessage(1, 680, 720);16
+sendRecruitMessage(3, 681, 717);19
 sendRecruitMessage(4, 682, 665);23
 sendRecruitMessage(4, 682, 674);27
 sendRecruitMessage(4, 682, 683);31
