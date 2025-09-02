@@ -13,6 +13,7 @@ to-do: determine vip lvl
 #include <sgslib.au3>
 
 ;change to english
+Sleep(2222)
 clickOn(490, 788)
 $windowTitle = "三国杀官方正版_三国杀一将成名全新起航_星火燎原重燃三国！"
 Local $WM_INPUTLANGCHANGEREQUEST = 0x50
@@ -23,6 +24,7 @@ DllCall("user32.dll", "ptr", "SendMessage", "hwnd", WinGetHandle($windowTitle), 
 "int", $ret[0])
 
 $msg = "感谢申请 请先进夜阑听梦审核 加分流q裙15·3425097"
+;$msg = "感谢申请 请先进夜阑听海审核 加分流q裙15·3425097"
 
 Func inviteToGuild()
 	clickOn(99, 845)
@@ -38,6 +40,8 @@ Func inviteToGuild()
 	ToolTip("search",0,0)
 	clickOn(2296, 615);with bookmark
 	;clickOn(2296, 599);without bookmark
+	ToolTip("wait 1 sec for the friend to load",0,0)
+	Sleep(1111)
 	ToolTip("bar",0,0)
 	clickOn(2332, 766);with bookmark
 	;clickOn(2327, 756);without bookmark
@@ -64,6 +68,8 @@ Func sendRecruitMessage($count, $hambergBarX, $hambergBarY, $wrapUp = False)
 		clickOn($hambergBarX, $hambergBarY)
 		ToolTip("clk on personal info",0,0)
 		clickOn($personalInfoX, $personalInfoY)
+		ToolTip("Sleep for 2 seconds in case dm doesn't load",0,0)
+		Sleep(2222)
 		clickOn(490, 788)
 		ToolTip("clear msg",0,0)
 		ToolTip("wait til loaded " & $totalCount,0,0)
@@ -97,12 +103,12 @@ Func sendRecruitMessage($count, $hambergBarX, $hambergBarY, $wrapUp = False)
 EndFunc
 
 ;#cs
-;sendRecruitMessage(5, 674, 682);5
-;sendRecruitMessage(1, 677, 686);6
-;sendRecruitMessage(3, 678, 697);9
-;sendRecruitMessage(1, 678, 697);10
-;sendRecruitMessage(5, 682, 710);15
-;sendRecruitMessage(1, 680, 720);16
+sendRecruitMessage(5, 674, 682);5
+sendRecruitMessage(1, 677, 686);6
+sendRecruitMessage(3, 678, 697);9
+sendRecruitMessage(1, 678, 697);10
+sendRecruitMessage(5, 682, 710);15
+sendRecruitMessage(1, 680, 720);16
 sendRecruitMessage(3, 681, 717);19
 sendRecruitMessage(4, 682, 665);23
 sendRecruitMessage(4, 682, 674);27
