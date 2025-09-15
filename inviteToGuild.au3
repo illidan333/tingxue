@@ -22,7 +22,7 @@ While True
 	For $i = 0 To 3
 		inviteToGuild($initX, $initY + $i * $inc, $delay)
 	Next
-		bottomInviteToGuild($initX, $initY + 4 * $inc, $delay)
+	;bottomInviteToGuild($initX, $initY + 4 * $inc, $delay)
 	clickOn(1870, 441)
 WEnd
 
@@ -55,8 +55,8 @@ Func bottomInviteToGuild($x, $y, $delay = 5)
 		ToolTip("1",0,0)
 		clickOn($x, $y, $delay)
 		ToolTip("2", 0, 0)
-		;clickOn($x + 48, $y - 70, $delay);no tu
-		clickOn($x + 48, $y - 90, $delay);you tu
+		clickOn($x + 48, $y - 70, $delay);no tu
+		;clickOn($x + 48, $y - 90, $delay);you tu
 	EndIf
 EndFunc
  

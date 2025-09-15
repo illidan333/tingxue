@@ -24,28 +24,25 @@ DllCall("user32.dll", "ptr", "SendMessage", "hwnd", WinGetHandle($windowTitle), 
 "int", $ret[0])
 
 $msg = "感谢申请 请先进夜阑听梦审核 加分流q裙15·3425097"
-$msg = "感谢申请 请先进夜阑听海审核 加分流q裙15·3425097"
+;$msg = "感谢申请 请先进夜阑听海审核 加分流q裙15·3425097"
 $msg = "感谢申请 请先进夜阑听月审核 加分流q裙15·3425097"
+;$msg = "感谢申请 请先进夜阑飞花审核 加分流q裙15·3425097"
 
 Func inviteToGuild()
 	clickOn(99, 845)
 	ToolTip("clk on name",0,0)
 	clickOn(141, 902)
 	ToolTip("cpy name",0,0)
-	clickOn(1487, 536);with bookmark
-	;clickOn(1481, 520);without bookmark
+	clickOn(1487, 536)
 	ToolTip("rightWindow friend search",0,0)
 	Send("{CTRLDOWN}v{CTRLUP}")
-	clickOn(1695, 536);with bookmark
-	;clickOn(1693, 522);without bookmark
+	clickOn(1695, 536)
 	ToolTip("search",0,0)
-	clickOn(2296, 615);with bookmark
-	;clickOn(2296, 599);without bookmark
+	clickOn(2296, 615)
 	ToolTip("wait 1 sec for the friend to load",0,0)
 	Sleep(1111)
 	ToolTip("bar",0,0)
-	clickOn(2332, 766);with bookmark
-	;clickOn(2327, 756);without bookmark
+	clickOn(2332, 766)
 	ToolTip("invite",0,0)
 	screenshot("C:\Users\hippo\OneDrive\Desktop\sgs\")
 	clickOn(490, 788)
