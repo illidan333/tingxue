@@ -13,17 +13,36 @@ to-do: scroll down
 #include <sgslib.au3>
 Sleep(2222)
 
-$initX = 1838
-$initY = 546
-$inc = 128
+;default resolution
+;$initX = 1838
+;$initY = 546
+;$inc = 128
+$vlvlxD = -473
+$vlvlyD = +12
+$refreshX = 1870
+$refreshY = 441
+$inviteXd = 48
+$inviteYd = 23
+
+;2880 1800 resolution
+$initX = 1073
+$initY = 335
+$inc = 83
+$refreshX = 1087
+$refreshY = 276
+$vlvlxD = -395
+$vlvlyD = +9
+$inviteXd = 30
+$inviteYd = 148
+
 $delay = 5
 
 While True
 	For $i = 0 To 3
-		inviteToGuild($initX, $initY + $i * $inc, $delay)
+		SLeep(2222)
+		inviteToGuild($initX, $initY + $i * $inc, $delay, $vlvlxD, $vlvlyD, $inviteXd, $inviteYd)
 	Next
-	;bottomInviteToGuild($initX, $initY + 4 * $inc, $delay)
-	clickOn(1870, 441)
+	clickOn($refreshX, $refreshY)
 WEnd
 
 Func belowV5($x, $y)
@@ -39,24 +58,14 @@ Func belowV5($x, $y)
 	return False
 EndFunc
 
-Func inviteToGuild($x, $y, $delay = 5)
-	;ToolTip(($x - 473) & ", " & ($y+12),0,0)
-	;Sleep(11111)
-	If Not belowV5($x - 473, $y+12) Then
+Func inviteToGuild($x, $y, $delay, $vlvlxD, $vlvlyD, $inviteXd, $inviteYd)
+	;If Not belowV5($x + $vlvlxD, $y + $vlvlyD) Then
 		ToolTip("1",0,0)
 		clickOn($x, $y, $delay)
 		ToolTip("2", 0, 0)
-		clickOn($x + 48, $y + 233, $delay)
-	EndIf
+		;MouseMove($x + $inviteXd, $y + $inviteYd)
+		;Sleep(1111)
+		;clickOn($x + $inviteXd+145, $y + $inviteYd, $delay)
+		clickOn($x + $inviteXd, $y + $inviteYd, $delay)
+	;EndIf
 EndFunc
-
-Func bottomInviteToGuild($x, $y, $delay = 5)
-	If Not belowV5($x - 473, $y+12) Then
-		ToolTip("1",0,0)
-		clickOn($x, $y, $delay)
-		ToolTip("2", 0, 0)
-		clickOn($x + 48, $y - 70, $delay);no tu
-		;clickOn($x + 48, $y - 90, $delay);you tu
-	EndIf
-EndFunc
- 
